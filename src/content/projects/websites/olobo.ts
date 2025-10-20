@@ -21,7 +21,7 @@ const oLobo: ProjectType = {
   title: "O Lobo",
   shortDescription: "olobo.shortDescription",
   description: "olobo.description",
-  github: "https://github.com/Lobooooooo14/olobo",
+  github: "https://github.com/olob0/olobo",
   url: "https://olobo.xyz",
   poster: {
     dark: "https://b-portifolio.olobo.xyz/olobo/olobo-dark-poster.webp",

@@ -19,7 +19,7 @@ const nlwPocketJavascriptInorbit: ProjectType = {
   title: "NLW Pocket Inorbit",
   shortDescription: "nlwPocketInorbit.shortDescription",
   description: "nlwPocketInorbit.description",
-  github: "https://github.com/Lobooooooo14/nlw-pocket-js-inorbit",
+  github: "https://github.com/olob0/nlw-pocket-js-inorbit",
   poster: {
     src: "https://b-portifolio.olobo.xyz/nlw-pocket-inorbit/nlw-pocket-inorbit-poster.webp"
   },

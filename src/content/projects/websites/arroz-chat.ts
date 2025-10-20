@@ -20,7 +20,7 @@ const arrozChat: ProjectType = {
   title: "Arroz Chat",
   shortDescription: "arrozChat.shortDescription",
   description: "arrozChat.description",
-  github: "https://github.com/Lobooooooo14/arroz-Chat",
+  github: "https://github.com/olob0/arroz-Chat",
   url: "https://arroz-chat.vercel.app/",
   invertColorsInTheme: "light",
   top: true,

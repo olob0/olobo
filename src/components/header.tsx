@@ -207,7 +207,7 @@ export function Buttons({
           variant="ghost"
           size="icon"
           onClick={() =>
-            window.open("https://github.com/Lobooooooo14", "_blank")
+            window.open("https://github.com/olob0", "_blank")
           }
         >
           <SiGithub size={22} />

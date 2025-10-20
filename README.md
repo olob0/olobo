@@ -20,7 +20,7 @@
 1. Clone this repository
 
 ```bash
-git clone https://github.com/Lobooooooo14/olobo.git
+git clone https://github.com/olob0/olobo.git
 ```
 
 2. Install dependencies

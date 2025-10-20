@@ -16,7 +16,7 @@ const tempyrature: ProjectType = {
   shortDescription: "tempyrature.shortDescription",
   description: "tempyrature.description",
   url: "https://tempyrature.readthedocs.io/en/latest/",
-  github: "https://github.com/Lobooooooo14/tempyrature",
+  github: "https://github.com/olob0/tempyrature",
   poster: {
     dark: "https://b-portifolio.olobo.xyz/tempyrature/tempyrature-dark-poster.webp",
     light:

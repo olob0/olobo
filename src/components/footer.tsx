@@ -6,9 +6,9 @@ export default function Footer() {
           &copy; {new Date().getFullYear()}{" "}
           <a
             className="hover:underline"
-            href="https://github.com/Lobooooooo14/"
+            href="https://github.com/olob0/"
           >
-            Lobooooooo14
+            olob0
           </a>
         </p>
       </div>
