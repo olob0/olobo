@@ -89,8 +89,8 @@ export function ProjectSection({
 
         {sectionProjects.length > (isMedium ? 1 : 2) && (
           <>
-            <CarouselPrevious className="left-[1rem] opacity-50 xl:left-[-2.5rem]" />
-            <CarouselNext className="right-[1rem] opacity-50 xl:right-[-2.5rem]" />
+            <CarouselPrevious className="left-4 opacity-50 xl:-left-10" />
+            <CarouselNext className="right-4 opacity-50 xl:-right-10" />
           </>
         )}
       </Carousel>

@@ -10,7 +10,7 @@ export function Blockquote({
   return (
     <motion.blockquote
       className={cn(
-        "ml-2 mt-6 rounded-[0.3rem] border-l-4 bg-primary/5 p-2 pl-6 italic text-primary/60",
+        "bg-primary/5 text-primary/60 mt-6 ml-2 rounded-[0.3rem] border-l-4 p-2 pl-6 italic",
         className
       )}
       {...rest}
@@ -28,7 +28,7 @@ export function InlineCode({
   return (
     <motion.code
       className={cn(
-        "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold",
+        "bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold",
         className
       )}
       {...rest}

@@ -18,7 +18,7 @@ export default function Loading({
       )}
       {...rest}
     >
-      <div className="h-6 w-6 animate-spin rounded-full border-[0.15rem] border-primary border-b-accent p-2" />
+      <div className="border-primary border-b-accent h-6 w-6 animate-spin rounded-full border-[0.15rem] p-2" />
     </div>
   )
 }

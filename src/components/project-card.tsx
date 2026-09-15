@@ -64,14 +64,14 @@ export default function ProjectCard({
       <CardContent className="space-y-3 p-4">
         <div className="text-center sm:text-left">
           <CardTitle>{project.title}</CardTitle>
-          <CardDescription className="overflow-x-hidden text-ellipsis text-nowrap">
+          <CardDescription className="overflow-x-hidden text-nowrap text-ellipsis">
             {t(project.shortDescription, { ns: "projects" })}
           </CardDescription>
         </div>
 
         {/* Badges */}
         <div className="relative flex flex-nowrap gap-2 overflow-hidden">
-          <div className="pointer-events-none absolute h-full w-full bg-gradient-to-l from-background to-transparent to-20%"></div>
+          <div className="from-background pointer-events-none absolute h-full w-full bg-linear-to-l to-transparent to-20%"></div>
           {project.badges.map((badge) => (
             <TechBadge
               key={badge.name}
@@ -82,10 +82,10 @@ export default function ProjectCard({
           ))}
         </div>
 
-        <div className="flex flex-col justify-between gap-2 xs:flex-row">
+        <div className="xs:flex-row flex flex-col justify-between gap-2">
           <Button
             variant="default"
-            className="w-full flex-row-reverse gap-2 xs:flex-row"
+            className="xs:flex-row w-full flex-row-reverse gap-2"
             onClick={() => navigate(`/projects/${project.slug}`)}
           >
             <ExpandIcon size={22} />

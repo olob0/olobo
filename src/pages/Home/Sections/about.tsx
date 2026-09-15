@@ -16,8 +16,8 @@ import {
   SiViteHex,
   SiHtml5,
   SiHtml5Hex,
-  SiCss3,
-  SiCss3Hex,
+  SiCss,
+  SiCssHex,
   SiSass,
   SiSassHex,
   SiTailwindcss,
@@ -43,7 +43,7 @@ export default function About() {
       </div>
 
       <div className="flex justify-center">
-        <div className="grid w-full grid-cols-4 gap-[0.3rem] px-[0.3rem] sm:max-w-screen-sm sm:grid-rows-8 sm:gap-0 sm:px-0 md:max-w-screen-md lg:max-w-screen-lg">
+        <div className="grid w-full grid-cols-4 gap-[0.3rem] px-[0.3rem] sm:max-w-(--breakpoint-sm) sm:grid-rows-8 sm:gap-0 sm:px-0 md:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg)">
           <div className="col-span-4 col-start-1 row-span-1 row-start-1 flex flex-col justify-center p-4 sm:col-span-2 sm:row-span-2">
             <h3 className="text-center sm:text-left">
               {t("about.begin.title")}
@@ -85,8 +85,8 @@ export default function About() {
           />
 
           <IconBox
-            _icon={SiCss3}
-            color={SiCss3Hex}
+            _icon={SiCss}
+            color={SiCssHex}
             className="col-start-4 row-start-4 sm:col-start-2 sm:row-start-5"
           />
 
