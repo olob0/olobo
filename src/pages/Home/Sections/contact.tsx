@@ -60,7 +60,7 @@ export default function Contact() {
               <Trans
                 t={t}
                 i18nKey="contact.card.description"
-                values={{ email: "lobooooooo14@gmail.com" }}
+                values={{ email: "gab.lobo.ctt@gmail.com" }}
                 components={[<InlineCode />]}
               />
             </CardDescription>
@@ -87,7 +87,7 @@ function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     window.open(
-      `mailto:lobooooooo14@gmail.com?subject=${values.subject}&body=${values.body}`
+      `mailto:gab.lobo.ctt@gmail.com?subject=${values.subject}&body=${values.body}`
     )
   }
 
