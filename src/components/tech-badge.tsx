@@ -7,8 +7,10 @@ import { Badge } from "@/components/ui/badge"
 import { BadgeType } from "@/content/projects"
 import { cn } from "@/lib/utils"
 
-interface TechBadgeProps
-  extends Omit<BadgeType, "id" | "icon" | "name" | "iconColor"> {
+interface TechBadgeProps extends Omit<
+  BadgeType,
+  "id" | "icon" | "name" | "iconColor"
+> {
   _icon: BadgeType["icon"]
   color: BadgeType["iconColor"]
   name?: string
@@ -24,7 +26,7 @@ export default function TechBadge({
   return (
     <Badge
       className={cn(
-        "flex items-center gap-2 font-mono text-xs text-primary/80 dark:text-primary/80",
+        "text-primary/80 dark:text-primary/80 flex items-center gap-2 font-mono text-xs",
         className
       )}
       style={{

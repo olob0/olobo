@@ -1,7 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
-import Loading from "@/components/loading"
-
 import Home from "@/pages/Home"
 import ErrorPage from "@/pages/error"
 import NotFound from "@/pages/not-found"
@@ -32,5 +30,5 @@ const router = createBrowserRouter([
 ])
 
 export default function Routes() {
-  return <RouterProvider router={router} fallbackElement={<Loading expand />} />
+  return <RouterProvider router={router} />
 }

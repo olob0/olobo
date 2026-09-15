@@ -159,7 +159,7 @@ export default function ProjectPage() {
                     ? (project.poster.dark ?? project.poster.src)
                     : (project.poster.light ?? project.poster.src)
                 }
-                className="h-full w-full rounded-lg border-[1px] object-cover"
+                className="h-full w-full rounded-lg border object-cover"
                 autoPlay
                 loop
                 muted
@@ -172,12 +172,12 @@ export default function ProjectPage() {
                     ? (project.poster.dark ?? project.poster.src)
                     : (project.poster.light ?? project.poster.src)
                 }
-                className="h-full w-full rounded-lg border-[1px] object-cover"
+                className="h-full w-full rounded-lg border object-cover"
               />
             )}
           </AspectRatio>
-          <div>
-            <Markdown className="[&>*>a]:underline [&>p]:text-pretty">
+          <div className="[&>*>a]:underline [&>p]:text-pretty">
+            <Markdown>
               {t(project.description, { ns: "projects", name: project.title })}
             </Markdown>
           </div>

@@ -56,7 +56,7 @@ export default function Contact() {
               <MailIcon size={32} />
               {t("contact.card.title")}
             </CardTitle>
-            <CardDescription className="text-pretty leading-relaxed">
+            <CardDescription className="leading-relaxed text-pretty">
               <Trans
                 t={t}
                 i18nKey="contact.card.description"

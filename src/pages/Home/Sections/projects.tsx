@@ -60,7 +60,7 @@ export default function Projects() {
             {topProjects.map((project) => (
               <CarouselItem
                 key={project.slug}
-                className="basis-[80%] sm:basis-[90%] lg:basis-[100%]"
+                className="basis-[80%] sm:basis-[90%] lg:basis-full"
               >
                 {isMedium ? (
                   <ProjectCard project={project} />
@@ -72,8 +72,8 @@ export default function Projects() {
           </CarouselContent>
           {topProjects.length > 1 && (
             <>
-              <CarouselPrevious className="left-[1rem] opacity-50 xl:left-[-2.5rem]" />
-              <CarouselNext className="right-[1rem] opacity-50 xl:right-[-2.5rem]" />
+              <CarouselPrevious className="left-4 opacity-50 xl:-left-10" />
+              <CarouselNext className="right-4 opacity-50 xl:-right-10" />
             </>
           )}
         </Carousel>
@@ -133,11 +133,11 @@ function CustomProjectCard({
         )}
 
         {/* overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-gradient-to-t from-black/80 to-black/40 opacity-0 backdrop-blur-sm transition-opacity hover:opacity-100">
-          <h3 className="my-0 overflow-hidden text-ellipsis text-nowrap text-center text-white">
+        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-linear-to-t from-black/80 to-black/40 opacity-0 backdrop-blur-xs transition-opacity hover:opacity-100">
+          <h3 className="my-0 overflow-hidden text-center text-nowrap text-ellipsis text-white">
             {project.title}
           </h3>
-          <p className="overflow-hidden text-ellipsis text-nowrap text-center text-sm text-white/80">
+          <p className="overflow-hidden text-center text-sm text-nowrap text-ellipsis text-white/80">
             {t(project.shortDescription, { ns: "projects" })}
           </p>
 

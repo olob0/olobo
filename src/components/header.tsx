@@ -58,11 +58,11 @@ export default function Header() {
         <Buttons className="mt-4 gap-1" />
       </SheetContent>
 
-      <motion.header className="sticky top-0 z-50 flex h-16 w-full items-center justify-between gap-4 border-border/40 bg-background/95 px-2 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:px-8">
+      <motion.header className="border-border/40 bg-background/95 supports-backdrop-filter:bg-background/60 sticky top-0 z-50 flex h-16 w-full items-center justify-between gap-4 px-2 py-2 backdrop-blur-sm sm:px-8">
         <div className="flex items-center gap-4">
           <a
             href="/"
-            className="flex items-center gap-4 rounded-lg px-2 py-1 transition-colors hover:bg-primary/10"
+            className="hover:bg-primary/10 flex items-center gap-4 rounded-lg px-2 py-1 transition-colors"
           >
             <Avatar className="rounded-none rounded-br-sm">
               <AvatarImage src={avatar} alt="Lobo Avatar" />
@@ -100,8 +100,8 @@ function ThemeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
-          <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <SunIcon className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+          <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
           <span className="sr-only">{t("theme.changeTheme")}</span>
         </Button>
       </DropdownMenuTrigger>
@@ -186,7 +186,7 @@ export function Navbar({ mobile = false, className, ...rest }: NavbarProps) {
         <SheetClose asChild key={link.id}>
           <span
             onClick={() => navigate(link.route)}
-            className="cursor-pointer text-foreground/60 transition-colors hover:text-foreground/80"
+            className="text-foreground/60 hover:text-foreground/80 cursor-pointer transition-colors"
           >
             {t(link.name)}
           </span>
@@ -206,9 +206,7 @@ export function Buttons({
         <Button
           variant="ghost"
           size="icon"
-          onClick={() =>
-            window.open("https://github.com/olob0", "_blank")
-          }
+          onClick={() => window.open("https://github.com/olob0", "_blank")}
         >
           <SiGithub size={22} />
         </Button>
